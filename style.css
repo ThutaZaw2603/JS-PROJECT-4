@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Inconsolata', monospace;
+   
+}
+body{
+    background:black;
+}
+
+header{
+    background:white;
+    
+    padding:2rem;
+    font-size:20px;
+    color:rgba(0, 0, 0, 0.623);
+
+}
+
+.head{
+    text-align:center;
+    align-items: center;
+    
+}
+
+.clock-face{
+    margin:1rem auto;
+    position: relative;
+    border:5px solid rgba(46, 184, 98, 0.952);
+    border-radius:50%;
+    width:450px;
+    height: 450px;
+    padding:10px;
+}
+
+.clock{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+.hand{
+    position: absolute;
+    top:50%;
+    background:white;
+    width:45%;
+    height:3px;
+    color:white;
+    transform-origin: 50%;
+    transform-origin: 110%;
+    transform:rotate(90deg);
+ 
+    transition-timing-function: cubic-bezier( 2.7, 0.58, 1);
+}
+
+.digiClock{
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    background:rgb(24, 21, 21);
+    
+}
+.hourDigi,.minDigi,.secDigi{
+    width:10%;
+    text-align:center;
+    font-size:40px;
+    border:1px solid green;
+}
+span{
+    font-size:35px;
+    padding:10px;
+    color:rgba(46, 184, 98, 0.952);
+}
+.hourDigi{
+    color:red;
+    
+}
+.minDigi{
+    color:green;
+}
+.secDigi{
+    color:blue;    
+}
+
+.playing{
+    animation: change reverse ease-in;
+}
+ 
+@keyframes change{
+    0%{transform:rotateY(0)};
+    100%{transform:rotateY(90deg)}
+}
