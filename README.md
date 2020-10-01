@@ -9,6 +9,6 @@ The thing that i learn from this project are
 
 2/ new Date()   ==> this property bring the browser current day
 
-3/ gerSecond()  ==> this method bring the current second and also getMinutes() or getHours();
+3/ getSecond()  ==> this method bring the current second and also getMinutes() or getHours();
 
 
